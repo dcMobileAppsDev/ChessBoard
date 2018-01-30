@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="ChessBoard.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChessBoard"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="parentGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" >
+            <RadioButton Content="6 x 6" Tag="6" 
+                         Checked="RadioButton_Checked" />
+            <RadioButton Content="7 x 7" Tag="7" 
+                         Checked="RadioButton_Checked" />
+            <RadioButton Content="8 x 8" Tag="8" Checked="RadioButton_Checked" />
+        </StackPanel>
+
+    </Grid>    
+    
+</Page>
